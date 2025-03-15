@@ -285,40 +285,185 @@
 # 23
 # 456
 
-n = 4  # Number of rows
-num = 0  # Starting number
-for i in range(1, n + 1):
-    for j in range(i):
-        print(num, end=" ")
-        num += 1
-    print()
+# n = 4  # Number of rows
+# num = 0  # Starting number
+# for i in range(1, n + 1):
+#     for j in range(i):
+#         print(num, end=" ")
+#         num += 1
+#     print()
 
-# how to get substring from a string
-str = "ababa"
-substr = []
-dic1 = {}
-for i in range(len(str)):
-    for j in range(i+1,len(str)+1):
-        substr.append(str[i:j])
+# # how to get substring from a string
+# str = "ababa"
+# substr = []
+# dic1 = {}
+# for i in range(len(str)):
+#     for j in range(i+1,len(str)+1):
+#         substr.append(str[i:j])
 
-for i in substr:
-    if i in dic1:
-        dic1[i] +=1
-    else:
-        dic1[i] = 1 
-print(substr)
-print(dic1)
+# for i in substr:
+#     if i in dic1:
+#         dic1[i] +=1
+#     else:
+#         dic1[i] = 1 
+# print(substr)
+# print(dic1)
 
-# character freq from a string
+# # character freq from a string
 
-str = "ababa"
-list1 = []
-for i in str:
-    list1.append(i)
-freq = {}
-for i in list1:
-    if i in freq:
-        freq[i] +=1
-    else:
-        freq[i] = 1
-print(freq)
+# str = "ababa"
+# list1 = []
+# for i in str:
+#     list1.append(i)
+# freq = {}
+# for i in list1:
+#     if i in freq:
+#         freq[i] +=1
+#     else:
+#         freq[i] = 1
+# print(freq)
+
+# #  hcf using for loop 
+
+# num1 = int(input("Enter the first number: "))
+# num2 = int(input("Enter the second number: "))
+
+# if num1 > num2:
+#     smaller = num2
+# else:
+#     smaller = num1
+# for i in range(1, smaller+1):
+#     if num1%i == 0 and num2%i == 0:
+#         hcf = i
+# print("The hcf of the two numbers is: ", hcf)
+
+# # lcm using for loop\
+# num1 = int(input("Enter the first number: "))
+# num2 = int(input("Enter the second number: "))
+
+# if num1 > num2:
+#     greater = num1 
+# else:
+#     greater = num2 
+# while True:
+#     if greater%num1 == 0 and greater%num2 == 0:
+#         lcm = greater
+#         break
+#     greater += 1
+# print("The lcm of the two numbers is: ", lcm)
+
+# # leap year using for loop
+# year = int(input("Enter the year: "))
+# if year%4 == 0:
+#     if year%100 == 0:
+#         if year%400 == 0:
+#             print("The year is a leap year")
+#         else:
+#             print("The year is not a leap year")
+#     else:
+#         print("The year is a leap year")
+# else:
+#     print("The year is not a leap year")
+
+#  prime numbers using for loop
+
+# num = int(input("Enter the number: "))
+# if num>1:
+#     for i in range(2,num):
+#         if num%i ==0:
+#             print("The number is not a prime number")
+#             break
+#         else:
+#             print("The number is a prime number")
+#             break
+# else:
+#     print("The number is not a prime number")
+
+#  print all prime number s in the range of 1 to 11
+# for i in range(1,12):
+#     if i>1:
+#         for j in range(2,i):
+#             if i%j ==0:
+#                 break
+#         else:
+#             print(i)
+
+# #  print all prime numbers in the range of 1 to 100
+# for i in range(1,101):
+#     if i>1:
+#         for j in range(2,i):
+#             if i%j ==0:
+#                 break
+#         else:
+#             print(i)
+
+
+# count digitis using for loop 
+# num = int(input("Enter the number: "))
+# count = 0
+# list1 = []
+# list(map(lambda x:list1.append(x),str(num)))
+# for i in list1:
+#     count+=1
+# print("The number of digits in the number is: ", count)
+
+# fibonacci series using for loop
+# num = int(input("Enter the number of terms: "))
+# list1 = []
+# for i in range(num):
+#     if i==0 or i ==1:
+#         list1.append(i)
+#     else:
+#         list1.append(list1[i-1]+list1[i-2])
+# print(list1)
+
+# factorial of a number using for loop
+# num = int(input("enter the num"))
+# fact = 1
+# for i in range(1, num+1):
+#     fact = fact*i
+# print(fact)
+
+# 20.Write a program to check whether a number is perfect number or not
+# num = int(input("Enter the number: "))
+# sum = 0 
+# for i in range(1, num):
+#     if num%i == 0:
+#         sum+=i
+# print(sum)
+# if sum == num:
+#     print("The number is a perfect number")
+# else:
+#     print("The number is not a perfect number")
+
+# 19.Write a program to check whether a number is Strong number or not
+
+# num = int(input("Enter the number: "))
+# sum =0 
+# list1 =[]
+# list(map(lambda x:list1.append(x),str(num)))
+# for i in list1:
+#     fact = 1
+#     for k in range(1, int(i)+1):
+#         fact = fact*k
+#     sum+=fact
+# if sum == num:
+#     print("The number is a strong number")
+# else:
+#     print("The number is not a strong number")
+
+    # Write a program to find the first and last digit of a number.
+
+# num = int(input("Enter the number: "))
+# list1 = []
+# sum = 0
+# list(map(lambda x:list1.append(x),str(num)))
+# print("The first digit of the number is: ", list1[0])
+# print("The last digit of the number is: ", list1[-1])
+# sum = (int(list1[0])+int(list1[-1]))
+# print("The sum of the first and last digit of the number is: ", sum)
+
+# table of a num
+num = int(input("Enter the number: "))
+for i in range(1,11):
+    print(num,"*",i,"=", num*i)
