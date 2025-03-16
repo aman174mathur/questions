@@ -36,17 +36,17 @@ import math
 # result = square(5)
 # print(result)
 
-# # variable length argument
-# def sum_all(*args):        #args = multiple arguments of same type 
-#     return sum(args)
-# result = sum_all(1,2,3,4,5,6,7,8,9,10)
-# print(result)
+# variable length argument
+def sum_all(*args):        #args = multiple arguments of same type 
+    return sum(args)
+result = sum_all(1,2,3,4,5,6,7,8,9,10)
+print(result)
 
-# def print_info(**kwargs):   #kwargs = multiple arguments of different type
-#     for key , value in kwargs.items():
-#         print(f"{key}:{value}")
+def print_info(**kwargs):   #kwargs = multiple arguments of different type
+    for key , value in kwargs.items():
+        print(f"{key}:{value}")
 
-# print_info(name = "Alice",age = 25, address = "USA")
+print_info(name = "Alice",age = 25, address = "USA")
 
 # # lambda function
 # square = lambda x:x*x
@@ -120,3 +120,6 @@ import math
 # valid paraenthis 
 
 #first class functions and high order functions vs high order functions
+
+# first class functions  : are those type of functions that can be passed as an argument for another function
+
