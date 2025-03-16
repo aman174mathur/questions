@@ -464,6 +464,23 @@
 # print("The sum of the first and last digit of the number is: ", sum)
 
 # table of a num
-num = int(input("Enter the number: "))
-for i in range(1,11):
-    print(num,"*",i,"=", num*i)
+# num = int(input("Enter the number: "))
+# for i in range(1,11):
+#     print(num,"*",i,"=", num*i)
+
+# valid anagram 
+s= "ababa"
+b= "tyu"
+dic1={}
+dic2 = {}
+for i in s:
+    dic1[i] = dic1.get(i,0)+1
+print(dic1)
+for j in b:
+    dic2[j] = dic2.get(i,0)+1
+print(dic2)
+
+if dic1==dic2:
+    print("valid")
+else:
+    print("invalid")
