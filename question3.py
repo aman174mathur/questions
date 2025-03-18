@@ -127,19 +127,20 @@
 
 # .program to find the frequency of the substring 
 
-# str = "ababa"
-# # output :{'a': 3, 'b': 2 , "ab":2 , "ba":2 , "aba":1 , "bab":1 , "ababa": 1 , "baba":1 } 
-# freq = {}
-# list1 =[]
-# for i in range(len(str)):
-#     for j in range(i+1,len(str)+1):
-#         list1.append(str[i:j])
-# for i in list1:
-#     if i in freq:
-#         freq[i] +=1
-#     else:
-#         freq[i] = 1
-# print(freq)
+str = "ababa"
+# output :{'a': 3, 'b': 2 , "ab":2 , "ba":2 , "aba":1 , "bab":1 , "ababa": 1 , "baba":1 } 
+freq = {}
+list1 =[]
+for i in range(len(str)):
+    for j in range(i+1,len(str)+1):
+        list1.append(str[i:j])
+print(list1)
+for i in list1:
+    if i in freq:
+        freq[i] +=1
+    else:
+        freq[i] = 1
+print(freq)
 
 
 # num = int(input('Enter the number: '))
@@ -469,18 +470,18 @@
 #     print(num,"*",i,"=", num*i)
 
 # valid anagram 
-s= "ababa"
-b= "tyu"
-dic1={}
-dic2 = {}
-for i in s:
-    dic1[i] = dic1.get(i,0)+1
-print(dic1)
-for j in b:
-    dic2[j] = dic2.get(i,0)+1
-print(dic2)
+# s= "ababa"
+# b= "tyu"
+# dic1={}
+# dic2 = {}
+# for i in s:
+#     dic1[i] = dic1.get(i,0)+1
+# print(dic1)
+# for j in b:
+#     dic2[j] = dic2.get(i,0)+1
+# print(dic2)
 
-if dic1==dic2:
-    print("valid")
-else:
-    print("invalid")
+# if dic1==dic2:
+#     print("valid")
+# else:
+#     print("invalid")
