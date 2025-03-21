@@ -30,26 +30,38 @@
 # This means that changes made to the parameter inside 
 # the function affect the original variable outside the function.
 
-def modify_list(lst):
-    lst.append(100)
+# def modify_list(lst):
+#     lst.append(100)
 
-my_list = [1, 2, 3]
-modify_list(my_list)
-print(my_list)  # Output: [1, 2, 3, 100]
-# In this example, the function modify_list() takes a list as an argument.
-# The function then appends an element to the list.
-# Since lists are mutable, the changes made to the list inside the function affect the original list 
-# outside the function.
+# my_list = [1, 2, 3]
+# modify_list(my_list)
+# print(my_list)  # Output: [1, 2, 3, 100]
+# # In this example, the function modify_list() takes a list as an argument.
+# # The function then appends an element to the list.
+# # Since lists are mutable, the changes made to the list inside the function affect the original list 
+# # outside the function.
 
-# call by value
-# Call by value is a method of passing arguments to a 
-# function where the actual value of the variabl is passed.
-# This means that changes made to the parameter inside the function do not affect the original variable outside th
-# function.
-def modify_list(lst):
-    lst = [100, 200, 300]  # This line creates a new list
-    return lst
-    my_list = [1, 2, 3]
-my_list = modify_list(my_list)
-    # print(my_list)  # Output: [1, 2, 3]
-    # In this example, the function modify_list() takes a list as an argument.
+# # call by value
+# # Call by value is a method of passing arguments to a 
+# # function where the actual value of the variabl is passed.
+# # This means that changes made to the parameter inside the function do not affect the original variable outside th
+# # function.
+# def modify_list(lst):
+#     lst = [100, 200, 300]  # This line creates a new list
+#     return lst
+#     my_list = [1, 2, 3]
+# my_list = modify_list(my_list)
+#     # print(my_list)  # Output: [1, 2, 3]
+#     # In this example, the function modify_list() takes a list as an argument.
+
+n=5
+num = 1
+for i in range(n):
+    for j in range(n-i):
+        if j ==0 or  j == n-i-1 or i == 0:
+            print(num, end=" ")
+            num += 1
+    else:
+        print(" ", end  =" ")
+    print()
+       
